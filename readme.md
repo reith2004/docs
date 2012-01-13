@@ -5,6 +5,7 @@ Laravel is a clean and classy framework for PHP web development. Freeing you fro
 ## To Install
 - download and extract to your web root
 - name your folder docs
-- just edit the links in the markdown files to suit your needs....
+- you can now access it via localhost/docs/public,
+- note: edit the links in the markdown files to suit your needs....
 
 ### [Official Website & Documentation](http://laravel.com)
