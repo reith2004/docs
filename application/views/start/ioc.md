@@ -48,4 +48,4 @@ Of course, we could leverage the IoC container to accomplish dependency injectio
 
 Note that we called the **resolve** method from within a resolver! This allows us to easily resolve deeply nested dependencies. This makes our repository more testable, since we can now inject a stub of SwiftMailer when testing the repository, allowing us to isolate the behavior of the repository from SwiftMailer.
 
-> **Note:** You may also [register controllers in the container](/docs/start/controllers#di).
+> **Note:** You may also [register controllers in the container](/docs/public/start/controllers#di).

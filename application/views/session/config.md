@@ -46,7 +46,7 @@ That's it. You're ready to go!
 <a name="database"></a>
 ### Database Sessions
 
-To start using database sessions, you will first need to [configure your database connection](/docs/database/config).
+To start using database sessions, you will first need to [configure your database connection](/docs/public/database/config).
 
 Already setup your database? Nice! Next, you will need to create a session table. Here are some SQL statements to help you get started:
 
@@ -78,7 +78,7 @@ Great! All you need to do now is set the driver in the **application/config/sess
 <a name="memcached"></a>
 ### Memcached Sessions
 
-Before using Memcached sessions, you must [configure your Memcached servers](/docs/database/config#memcached).
+Before using Memcached sessions, you must [configure your Memcached servers](/docs/public/database/config#memcached).
 
 All done? Great! Just set the driver in the **application/config/session.php** file:
 
@@ -87,7 +87,7 @@ All done? Great! Just set the driver in the **application/config/session.php** f
 <a name="redis"></a>
 ### Redis Sessions
 
-Before using Redis sessions, you must [configure your Redis servers](/docs/database/redis#config).
+Before using Redis sessions, you must [configure your Redis servers](/docs/public/database/redis#config).
 
 Finished? Awesome! Just set the driver in the **application/config/session.php** file:
 

@@ -32,7 +32,7 @@ After a file has been uploaded to your application, you will want to move it fro
 
 	File::upload('picture', 'path/to/pictures');
 
-> **Note:** You can easily validate file uploads using the [Validator class](/docs/start/validation).
+> **Note:** You can easily validate file uploads using the [Validator class](/docs/public/start/validation).
 
 <a name="ext"></a>
 ### File Extensions

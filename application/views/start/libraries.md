@@ -7,7 +7,7 @@
 <a name="models"></a>
 ## Models
 
-Models are the meat of your application, and they live in the **application/models** directory. A model is simply a class. Nothing more. It should contain business logic related to your application. Models may also be [Eloquent models](/docs/database/eloquent), which allow you to work with your database elegantly and beautifully. Models are auto-loaded by Laravel, so there is no need to **require** them before using them.
+Models are the meat of your application, and they live in the **application/models** directory. A model is simply a class. Nothing more. It should contain business logic related to your application. Models may also be [Eloquent models](/docs/public/database/eloquent), which allow you to work with your database elegantly and beautifully. Models are auto-loaded by Laravel, so there is no need to **require** them before using them.
 
 <a name="libraries"></a>
 ## Libraries

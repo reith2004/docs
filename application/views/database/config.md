@@ -49,4 +49,4 @@ As you have probably noticed, each database connection defined in the **applicat
 
 	'default' => 'sqlite';
 
-The default connection will always be used by the [fluent query builder](/docs/database/query) and [Eloquent ORM](/docs/database/eloquent). If you need to change the default connection during a request, use the **Config::set** method.
+The default connection will always be used by the [fluent query builder](/docs/public/database/query) and [Eloquent ORM](/docs/public/database/eloquent). If you need to change the default connection during a request, use the **Config::set** method.

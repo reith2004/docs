@@ -292,7 +292,7 @@ Once you have performed your validation, you need an easy way to get the errors 
 		}
 	}
 
-Great! So, we have two simple registration routes. One to handle displaying the form, and one to handle the posting of the form. In the **POST** route, we run some validation over the input. If the validation fails, we redirect back to the registration form and [flash the validation errors to the session](/docs/start/views#with) so they will be available for us to display.
+Great! So, we have two simple registration routes. One to handle displaying the form, and one to handle the posting of the form. In the **POST** route, we run some validation over the input. If the validation fails, we redirect back to the registration form and [flash the validation errors to the session](/docs/public/start/views#with) so they will be available for us to display.
 
 But, notice we are not explicitly binding the errors to the view in our **GET** route. However, an **errors** variable will still be available in the view. Laravel intelligently determines if errors exist in the session, and if they do, binds them to the view for you. If no errors exist in the session, an empty message container will still be bound to the view. In your views, this allows you to always assume you have a message container available via the **errors** variable. We love making your life easier.
 

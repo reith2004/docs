@@ -86,7 +86,7 @@ You may also bind view data by simply setting properties on a view instance:
 	     return $view;
 	}
 
-> **Note:** An **errors** variable is always bound to every view. Check out the [Validator documentation](/docs/start/validation#views) to learn why.
+> **Note:** An **errors** variable is always bound to every view. Check out the [Validator documentation](/docs/public/start/validation#views) to learn why.
 
 <a name="nest"></a>
 ## Nesting Views Within Views
@@ -230,7 +230,7 @@ You can even redirect the browser to a location outside of your application:
 <a name="named"></a>
 ### Redirect Using Named Routes
 
-So far we've created redirects by specifying a URI to redirect to. But, what if the URI to the user's profile changes? It would be better to create a redirect based on the [route name](/docs/start/routes#named). Let's learn how to do it. Assuming the user profile route is named **profile**, you can redirect to the route using a dynamic, static method call like this:
+So far we've created redirects by specifying a URI to redirect to. But, what if the URI to the user's profile changes? It would be better to create a redirect based on the [route name](/docs/public/start/routes#named). Let's learn how to do it. Assuming the user profile route is named **profile**, you can redirect to the route using a dynamic, static method call like this:
 
 	return Redirect::to_profile();
 
@@ -270,13 +270,13 @@ Of course, flashing passwords or other sensitive information to the session is a
 
 	return Redirect::to('register')->with_input('except', array('password'));
 
-Another common scenario is flashing validation errors to the session before redirect to a form. It's so easy. Just use the **with_errors** method on the **Redirect** class and pass in your [Validator](/docs/start/validation). The Validator's errors will automatically be flashed:
+Another common scenario is flashing validation errors to the session before redirect to a form. It's so easy. Just use the **with_errors** method on the **Redirect** class and pass in your [Validator](/docs/public/start/validation). The Validator's errors will automatically be flashed:
 
 	return Redirect::to('register')->with_errors($validator);
 
-To learn more about working with validation errors and views, check out the [Validator documentation](/docs/start/validation#views).
+To learn more about working with validation errors and views, check out the [Validator documentation](/docs/public/start/validation#views).
 
-> **Note:** For more information regarding Sessions and flash data, check out the [Session documentation](/docs/session/config).
+> **Note:** For more information regarding Sessions and flash data, check out the [Session documentation](/docs/public/session/config).
 
 <a name="downloads"></a>
 ## Downloads
@@ -435,7 +435,7 @@ Any other attributes that should be applied to the link may be passed in the thi
 <a name="html-route-links"></a>
 ### Links To Named Routes
 
-If you are using [named routes](/docs/start/routes#named), you use intuitive, expressive syntax to create links to those routes via dynamic methods:
+If you are using [named routes](/docs/public/start/routes#named), you use intuitive, expressive syntax to create links to those routes via dynamic methods:
 
 	echo HTML::link_to_login('Login');
 
@@ -501,7 +501,7 @@ Need an un-ordered list? No problem. Just use the **ul** method:
 
 Just looking at pagination libraries probably makes you cringe. It doesn't have to. Laravel makes pagination enjoyable. Really.
 
-> **Note:** Before learning about pagination, you should probably read up on [Eloquent models](/docs/database/eloquent).
+> **Note:** Before learning about pagination, you should probably read up on [Eloquent models](/docs/public/database/eloquent).
 
 To learn about pagination, we'll use an "User" Eloquent model. First, let's define a **per_page** static property on our model. This will tell Laravel how many users to show per page when paginating lists of users:
 
@@ -519,7 +519,7 @@ The **paginate** method will return an instance of the **Paginator** class. Noti
 
 	$results = $users->results;
 
-Need to paginate results using the [Fluent query builder](/docs/database/query)? Simply pass the number of items to show per page into the **paginate** method:
+Need to paginate results using the [Fluent query builder](/docs/public/database/query)? Simply pass the number of items to show per page into the **paginate** method:
 
 	$users = DB::table('users')->where('votes', '>' 100)->paginate(10);
 

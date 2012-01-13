@@ -6,7 +6,7 @@
 - [Retrieving The Logged In User](#user)
 - [Logging Out](#logout)
 
-> **Note:** Before using the Auth class, you must [specify a session driver](/docs/session/config).
+> **Note:** Before using the Auth class, you must [specify a session driver](/docs/public/session/config).
 
 <a name="hash"></a>
 ### Salting & Hashing
@@ -38,7 +38,7 @@ Logging a user into your application is simple using the **attempt** method on t
 
 If the user's credentials are valid, the user ID will be stored in the session and the user will be considered "logged in" on subsequent requests to your application.
 
-You probably noticed this method name corresponds to the **attempt** function you [configured earlier](/docs/auth/config#attempt). Each time you call the **attempt** method on the **Auth** class, the **attempt** function in the configuration file will be called to check the user's credentials. It all makes sense now, right?
+You probably noticed this method name corresponds to the **attempt** function you [configured earlier](/docs/public/auth/config#attempt). Each time you call the **attempt** method on the **Auth** class, the **attempt** function in the configuration file will be called to check the user's credentials. It all makes sense now, right?
 
 > **Note:** To provide more flexiblity when working with third-party authentication providers, you are not required to pass a password into the **attempt** method.
 
@@ -58,7 +58,7 @@ Sometimes you may need to login a user without checking their credentials, such 
 <a name="filter"></a>
 ### Protecting Routes
 
-It is common to limit access to certain routes only to logged in users. It's a breeze in Laravel using the built-in [auth filter](/docs/start/routes#filters). If the user is logged in, the request will proceed as normal; however, if the user is not logged in, they will be redirected to the "login" [named route](/docs/start/routes#named).
+It is common to limit access to certain routes only to logged in users. It's a breeze in Laravel using the built-in [auth filter](/docs/public/start/routes#filters). If the user is logged in, the request will proceed as normal; however, if the user is not logged in, they will be redirected to the "login" [named route](/docs/public/start/routes#named).
 
 To protect a route, simply attach the **auth** filter:
 
@@ -73,7 +73,7 @@ Once a user has logged in to your application, you may easily access the user mo
 
 	return Auth::user()->email;
 
-This method simply calls the [**user** function](/docs/auth/config#user) in the configuration file. Also, you don't need to worry about performance when using this method. The user is only retrieved from storage the first time you use the method.
+This method simply calls the [**user** function](/docs/public/auth/config#user) in the configuration file. Also, you don't need to worry about performance when using this method. The user is only retrieved from storage the first time you use the method.
 
 > **Note:** If the user is not logged in, the **user** method will return NULL.
 

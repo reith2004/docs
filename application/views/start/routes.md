@@ -58,7 +58,7 @@ Once you start using named routes, you won't be able to live without them. They 
 
 Notice the route now has an array value with a **name** key. As you have probably guessed, the **name** value is the name of the route.
 
-Now that you have named the route, you can [generate URLs](/docs/start/views#urls) and [perform redirects](/docs/start/views#redirect) using the route name instead of the route URI. This means that you can change the route URI as much as you want and the links to that route on your views will always be correct. It's beautiful, isn't it?
+Now that you have named the route, you can [generate URLs](/docs/public/start/views#urls) and [perform redirects](/docs/public/start/views#redirect) using the route name instead of the route URI. This means that you can change the route URI as much as you want and the links to that route on your views will always be correct. It's beautiful, isn't it?
 
 <a name="filters"></a>
 ## Route Filters
@@ -93,7 +93,7 @@ Why stop with one filter? You can define multiple filters for a single route by 
 
 	'POST /user' => array('before' => 'auth|csrf', function() {})
 
-Remember, if a "before" filter returns a value, that value will be considered the output of the request. For example, the built-in **auth** filter checks if the user has logged in to your application. If they haven't, a [Redirect](/docs/start/views#redirect) to the login page is sent to the browser. Isn't the simplicity refreshing?
+Remember, if a "before" filter returns a value, that value will be considered the output of the request. For example, the built-in **auth** filter checks if the user has logged in to your application. If they haven't, a [Redirect](/docs/public/start/views#redirect) to the login page is sent to the browser. Isn't the simplicity refreshing?
 
 Of course, adding filters to run after the request is just as easy:
 

@@ -11,7 +11,7 @@ To get started, let's look over the **application/config/auth.php** file. The au
 <a name="user"></a>
 ### The "User" Function
 
-The **user** function is called when Laravel needs to retrieve the currently logged in user of your application. When a user logs into your application, Laravel stores the ID of that user in the [session](/docs/session/config). So, on subsequent requests, we can use the ID stored in the session to retrieve the user's information from storage. However, applications use various data stores. For this reason, you are given complete flexibility regarding how to retrieve the user.
+The **user** function is called when Laravel needs to retrieve the currently logged in user of your application. When a user logs into your application, Laravel stores the ID of that user in the [session](/docs/public/session/config). So, on subsequent requests, we can use the ID stored in the session to retrieve the user's information from storage. However, applications use various data stores. For this reason, you are given complete flexibility regarding how to retrieve the user.
 
 Of course, a simple default configuration has been setup for you. Let's take a look:
 
@@ -23,7 +23,7 @@ Of course, a simple default configuration has been setup for you. Let's take a l
 		}
 	}
 
-As you probably noticed, the user's ID is passed to the function. The default configuration utilizes an User [Eloquent model](/docs/database/eloquent) to retrieve and return the user from the database. Of course, you are free to use other methods of retrieving the user, such as the [fluent query builder](/docs/database/query) or [Redis](/docs/database/redis). If no user is found in storage for the given ID, the function should simply return **null**.
+As you probably noticed, the user's ID is passed to the function. The default configuration utilizes an User [Eloquent model](/docs/public/database/eloquent) to retrieve and return the user from the database. Of course, you are free to use other methods of retrieving the user, such as the [fluent query builder](/docs/public/database/query) or [Redis](/docs/public/database/redis). If no user is found in storage for the given ID, the function should simply return **null**.
 
 <a name="attempt"></a>
 ### The "Attempt" Function

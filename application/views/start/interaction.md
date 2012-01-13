@@ -165,13 +165,13 @@ Laravel provides an easy method of protecting your application from [cross-site 
 
 	echo Form::token();
 
-Now, simply [attach the built-in CSRF filter](/docs/start/routes#filters) to the route the form is posting to. If the token submitted by the form does not match the token in the user's session, the **application/views/error/500.php** view will be displayed.
+Now, simply [attach the built-in CSRF filter](/docs/public/start/routes#filters) to the route the form is posting to. If the token submitted by the form does not match the token in the user's session, the **application/views/error/500.php** view will be displayed.
 
 Want to just get the CSRF token without generating a hidden input field? Use the **token** method on the **Session** class:
 
 	echo Session::token();
 
-> **Note:** Don't forget to [specify a session driver](/docs/session/config) before using these methods.
+> **Note:** Don't forget to [specify a session driver](/docs/public/session/config) before using these methods.
 
 <a name="form-labels"></a>
 ### Labels
