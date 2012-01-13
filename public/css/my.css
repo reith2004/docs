@@ -1,0 +1,119 @@
+/*!
+ * my 1.0
+ *
+ * Copyright 2011 reith2004, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Date: Sun Nov 20 21:42:29 PST 2011
+ */
+
+body {
+  min-height: 100%;
+}
+
+.btn {
+  padding: 2px 8px 2px 8px;
+}
+
+.btn.small {
+  padding: 4px 8px 4px 8px;
+}
+
+label {
+  text-align: left;
+}
+
+.content {
+  margin-bottom: 100px;
+}
+
+.actions {
+  margin-left: -19px;
+  margin-right: -20px;
+  padding: 5px;
+}
+
+.navbar {
+  background: #962C2C;
+}
+
+/*.navbar-inner, .navbar .fill {
+  margin-top: 2px;
+  background-color: #30607D;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#2491DF), to(#2276BB));
+  background-image: -moz-linear-gradient(top, #2491DF, #2276BB);
+  background-image: -ms-linear-gradient(top, #2491DF, #2276BB);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2491DF), color-stop(100%, #2276BB));
+  background-image: -webkit-linear-gradient(top, #2491DF, #2276BB);
+  background-image: -o-linear-gradient(top, #2491DF, #2276BB);
+  background-image: linear-gradient(top, #2491DF, #2276BB);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2491DF', endColorstr='#2276BB', GradientType=0);
+  -webkit-box-shadow: 0 1px 6px #30607D, inset 0 -1px 0 #2491DF;
+  -moz-box-shadow: 0 1px 6px #30607D, inset 0 -1px 0 #2491DF;
+  box-shadow: 0 1px 6px #30607D, inset 0 -1px 0 #2491DF;
+}*/
+
+.navbar div > ul .active > a, .nav .active > a {
+  background-color: #2EB7E5;
+  background-color: rgba(46, 183, 229, 0.4);
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.navbar a {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #B2EBFF;
+  font-weight: bold;
+}
+
+.span3 ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.span3 > ul > li {
+  padding: 4px;
+  padding-left: 30px;
+  border-top: solid 1px #f2f2f2;
+  border-left: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+}
+
+.span3 > ul > li:last-child, .span3 > ul ul > li:last-child {
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.span3 ul ul {
+  list-style-type: none;
+  margin-left: -30px;
+  margin-right: -4px;
+  margin-top: 4px;
+}
+
+.span3 ul ul > li {
+  padding: 4px;
+  padding-left: 50px;
+  border-top: solid 1px #f2f2f2;
+}
+
+footer {
+  padding: 20px;
+  padding-top: -100px;
+  border-top: none;
+  height: 125px;
+}
+footer h4{
+  color:#999999;
+}
+footer p {
+  color:#999999;
+}
+footer a {
+  color:#2EB7E5;
+}
+footer a:hover {
+  color:#2276BB;
+  text-decoration:underline;
+}

@@ -8,9 +8,30 @@
 		<?php echo Asset::styles(); ?>
 		<?php echo Asset::scripts(); ?>
 	</head>
-	<body>
-		<div class="container">
+	<body style="padding-top: 60px;">
 
+		<div class="navbar navbar-fixed" data-scrollspy="scrollspy">
+
+		  <div class="navbar-inner">
+
+		    <div class="container">
+
+		      <a class="brand" href="./index.html">Laravel</a>
+
+		      <ul class="nav">
+
+		        <li><a href="#"><em>{ A Web Framework for Web Artisan }</em></a></li>
+
+		      </ul>
+
+		    </div>
+
+		  </div>
+
+		</div>
+
+
+		<div class="container">
 			<div class="row">
 				<div class="span3">
 					<h3>Tables of Contents</h3>
@@ -24,13 +45,18 @@
 				</div>
 			</div>
 
-			<ul>
-				<li><a href="http://laravel.com">Official Website</a></li>
-				<li><a href="http://forums.laravel.com">Laravel Forums</a></li>
-				<li><a href="http://github.com/laravel/laravel">GitHub Repository</a></li>
-			</ul>
-
 		</div>
+
+	    <footer>
+			<div class='container'>
+
+				<p>
+					<a href="http://laravel.com" class="btn small primary">Official Website</a> | <a href="http://forums.laravel.com" class="btn small primary">Laravel Forums</a> | <a href="http://github.com/laravel/laravel" class="btn small primary">GitHub Repository</a>
+				</p>
+
+			</div>
+	    </footer>
+
 	</body>
 
 </html>

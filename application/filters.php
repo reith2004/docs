@@ -46,6 +46,7 @@ return array(
 	{
 		// Do stuff before every request to your application.
 		Asset::add('bootsrap', 'css/bootstrap.min.css');
+		Asset::add('mycss', 'css/my.css');
 		Asset::add('jquery', 'js/jquery.js');
 	},
 
